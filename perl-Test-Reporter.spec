@@ -1,15 +1,15 @@
 %define upstream_name    Test-Reporter
-%define upstream_version 1.57
+%define upstream_version 1.59
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	Sends test results to cpan-testers@perl.org
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Test/Test-Reporter-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Carp)
@@ -46,8 +46,8 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 %files
 %doc Changes LICENSE META.yml README
-%{_bindir}/cpantest
-%{_mandir}/man1/*
+# %{_bindir}/cpantest
+# %{_mandir}/man1/*
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
 
@@ -59,4 +59,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 * Fri Dec 24 2010 Shlomi Fish <shlomif@mandriva.org> 1.570.0-1mdv2011.0
 + Revision: 624631
 - import perl-Test-Reporter
+
 

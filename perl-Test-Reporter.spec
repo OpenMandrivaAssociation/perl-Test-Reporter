@@ -1,5 +1,5 @@
 %define upstream_name    Test-Reporter
-%define upstream_version 1.59
+%define upstream_version 1.60
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -59,5 +59,6 @@ perl Makefile.PL INSTALLDIRS=vendor
 * Fri Dec 24 2010 Shlomi Fish <shlomif@mandriva.org> 1.570.0-1mdv2011.0
 + Revision: 624631
 - import perl-Test-Reporter
+
 
 

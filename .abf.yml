@@ -1,2 +1,4 @@
+removed_sources:
+  Test-Reporter-1.57.tar.gz: 350671b0bc8523b1a0443c2c6433e673dac77567
 sources:
-  "Test-Reporter-1.57.tar.gz": 350671b0bc8523b1a0443c2c6433e673dac77567
+  Test-Reporter-1.60.tar.gz: e99a146173412637e38840ef131f2081c4911832

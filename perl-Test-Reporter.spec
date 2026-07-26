@@ -1,15 +1,13 @@
 %define upstream_name    Test-Reporter
-%define upstream_version 1.62
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.62
+Release:	2
 
 Summary:	Sends test results to cpan-testers@perl.org
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/cpan-testers/Test-Reporter
-Source0:	https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Test-Reporter-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Test-Reporter-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -33,7 +31,7 @@ CPAN Testers project. Test::Reporter has wide support for various perl5's
 and platforms.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor

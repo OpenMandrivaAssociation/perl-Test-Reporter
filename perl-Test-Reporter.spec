@@ -2,7 +2,7 @@
 %define upstream_version 1.62
 Name:		perl-%{upstream_name}
 Version:	1.62
-Release:	2
+Release:	3
 
 Summary:	Sends test results to cpan-testers@perl.org
 License:	GPL+ or Artistic
@@ -41,6 +41,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 %check
 # soft: do not fail package on test failures
 set +e
+make test || :
 %make test || :
 
 %install

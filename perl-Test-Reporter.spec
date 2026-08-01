@@ -2,7 +2,7 @@
 %define upstream_version 1.62
 Name:		perl-%{upstream_name}
 Version:	1.62
-Release:	3
+Release:	4
 
 Summary:	Sends test results to cpan-testers@perl.org
 License:	GPL+ or Artistic
@@ -48,9 +48,9 @@ make test || :
 %makeinstall_std
 
 %files
-%doc Changes LICENSE META.yml README
-# %{_bindir}/cpantest
-# %{_mandir}/man1/*
+%doc Changes META.yml README
+# bindir/cpantest
+# mandir/man1/*
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
 
